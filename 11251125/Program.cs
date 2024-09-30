@@ -203,3 +203,98 @@
 //    Console.WriteLine("Индекса не существует");
 //else
 //    Console.WriteLine(ints[index]);
+
+
+//11.9
+//string[] array = { "A", "B", "C", "D", "E" };
+//for (int i = array.Length - 1; i >= 0; --i)
+//    Console.Write(array[i] + " ");
+//Console.ReadKey(true);
+
+//Array.Reverse
+
+//11.10
+//int[] array = new int[20];
+
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] = 1 + i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
+
+
+//11/12
+//int[] array = new int[20];
+
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] = 20 - i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
+//11/11
+//int[] array = new int[25];
+
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] = 1 + i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
+//Console.WriteLine("100" + " " + "200");    
+//int[] array = new int[20];
+
+//11.14
+//int[] array = new int[9999];
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] =  - i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
+
+//11/15
+//a
+//int[] array = new int[8];
+
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] = 1 + i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
+
+//b
+//int[] array = new int[20];
+
+//for (int i = 0; i < array.Length; i++)
+//{
+//    array[i] = 20 - i;
+//}
+
+//Console.WriteLine("Массив:");
+//foreach (int number in array)
+//{
+//    Console.Write(number + " ");
+//}
