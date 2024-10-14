@@ -1,4 +1,186 @@
-﻿// See https://aka.ms/new-console-template for more information
+//14
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//int max = 0;
+//int cur = 0;    
+//foreach (char c in input)
+//{
+//    if (char.IsDigit(c))
+//    {
+//        cur++;
+//        if (cur > max)
+//        {
+//            max = cur;
+//        }
+//    }
+//    else
+//    {
+//        cur = 0;
+//    }
+//}
+//Console.WriteLine("dlina"+ max);
+
+//15
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//if ( input.EndsWith(":") )
+//{
+//    input = input.Substring(0, input.Length - 1);
+//}
+//string[] words = input.Split(';');
+//    int count =  0;
+//foreach ( string word in words )
+//{
+//    string trim = word.Trim();
+//    if ( trim.Length > 0 && trim.EndsWith("a", StringComparison.OrdinalIgnoreCase))
+//    {
+//        count++;
+//    }
+//}
+//Console.WriteLine("kol-vo slov"+count);
+
+//16
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//string[] words = input.Split(new char[] { ' ', ',','.',';',':','!','?'}, StringSplitOptions.RemoveEmptyEntries);
+//Console.WriteLine("slova na k");
+//bool found = false; 
+//foreach ( string word in words)
+//{
+//    if (word.IndexOf('k', StringComparison.OrdinalIgnoreCase) >= 0)
+//    {
+//        Console.WriteLine(word);
+//        found = true;   
+//    }
+//}
+//if (!found)
+//{
+//    Console.WriteLine("slov net");
+//}
+
+//17
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//string[] words = input.Split(new char[] { ' ', ',', '.', ';', ':', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+//Console.WriteLine("slova nachin i zakan");
+//bool found = false;
+//foreach (string word in words)
+//{
+//   if ( word.Length > 0)
+//    {
+//        if (char.ToLower(word[0]) == char.ToLower(word[word.Length - 1]))
+//        {
+//            Console.WriteLine(word);
+//            found = true;
+//        }
+
+//    }
+//}
+//if (!found)
+//{
+//    Console.WriteLine("slov net");
+//}
+
+//18
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//char oldchar = ':';
+//char newchar = ';';
+//int count = 0;
+//string newStr = "";
+//for(int i = 0; i < input.Length; i++)
+
+//    if (input[i] == oldchar)
+//        count++;
+//input = input.Replace(oldchar, newchar);
+//Console.WriteLine(input);
+//Console.WriteLine(count);
+
+//18.2
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//char oldchar = ':';
+//char newchar = ';';
+//int count = 0;
+//string newStr = "";
+//for (int i = 0; i < input.Length; i++)
+//{
+//    if (input[i] == oldchar)
+//    {
+//        newStr += newchar;
+//        count++;
+//    }
+//    else
+//        newStr += input[i];
+//}
+//input = input.Replace(oldchar, newchar);
+//Console.WriteLine(input);
+
+//Console.WriteLine(newStr);
+//Console.WriteLine(count);
+
+//19
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//char oldchar = ':';
+//char newchar = ' ';
+//int count = 0;
+//string newStr = "";
+//for (int i = 0; i < input.Length; i++)
+
+//    if (input[i] == oldchar)
+//        count++;
+//input = input.Replace(oldchar, newchar);
+//Console.WriteLine(input);
+//Console.WriteLine(count);
+
+//20
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//char oldchar = ' ';
+//char newchar = ',';
+//char prob = ' ';
+//int count = 0;
+//for (int i = 0; i < input.Length; i++)
+//    if (input[i] == oldchar + prob)
+//        count++;
+//input = input.Replace(oldchar, newchar);
+//Console.WriteLine(input);
+
+//21
+//Console.WriteLine("vvedite stroky");
+//string input = Console.ReadLine();
+//int open = input.IndexOf('(');
+//int close = input.LastIndexOf(')');
+//if(open != -1 && close != -1 && open<close)
+//{
+//    string result = input.Remove(open, close + 1);
+//    Console.WriteLine("result: " + result);
+//}
+//else
+//{
+//    Console.WriteLine("skopok net or nepravelno");
+//}
+
+//22
+//Console.WriteLine("vvedite slovo");
+//string input = Console.ReadLine();
+//string wordfind = Console.ReadLine();
+//string[] words = input.Split(new char[] { ' ', ',', '.', ';', ':', '!', '?'}, StringSplitOptions.RemoveEmptyEntries);
+//int count = 0;
+//foreach (string word in words)
+//{
+//    if (word.Equals(wordfind, StringComparison.OrdinalIgnoreCase))
+//    {
+//        count++;
+
+//    }
+//}
+//Console.WriteLine($"eto slovo'{wordfind}'vstr {count} raz");
+
+
+
+// See https://aka.ms/new-console-template for more information
 //1.1
 //int a = 31;
 //int b = 18;
