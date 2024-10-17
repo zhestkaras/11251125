@@ -1,3 +1,79 @@
+//int a = 0;
+//List<int> aaa = new List<int>();
+//Console.WriteLine("vvedite k");
+//int.TryParse(Console.ReadLine(), out int k);
+//Console.WriteLine("vvedite kol-vo elementov");
+//int.TryParse(Console.ReadLine(), out int n);
+//Random random = new Random();
+//for (int i = 0; i < n; i++)
+//    aaa.Add(random.Next(0, n));
+//aaa.ForEach(x => Console.WriteLine(x));
+//List<int> newaaa = aaa.Where(x => x % k == 0).ToList();
+//newaaa.ForEach(x => a += x);
+//Console.WriteLine(a);
+
+//2
+//Console.WriteLine("vvedite kolvo elem");
+//int.TryParse(Console.ReadLine(), out int n);
+//List<int> celoe = new List<int>();
+//Random random = new Random();
+//for (int i = 0; i < n; i++)
+//    celoe.Add(random.Next(0, n));
+//celoe.ForEach(x => Console.WriteLine(x));
+
+//List<int> nomera = new List<int>();
+//int nuli = celoe.Count(x => x == 0);
+//for(int i = 0; i < nuli; i++)
+//{
+//    int index = celoe.LastIndexOf(0);
+//    nomera.Add(index);
+//    celoe.RemoveAt(index);
+//}
+//Console.WriteLine("new:");
+//nomera.ForEach(x => Console.WriteLine(x));
+
+//4
+
+//List<int> nume = new List<int>();
+//while (true)
+//{
+//    Console.WriteLine("введите число или exit");
+//    if (!int.TryParse(Console.ReadLine(), out int num))
+//        break;
+//    nume.Add(num);
+//}
+
+//bool pos = Pos(nume);
+
+//if (pos)
+//{
+//    Console.WriteLine("vozrastaet");
+//}
+//else
+//{
+//    Console.WriteLine("Nevozrastaet");
+//}
+
+//static bool Pos(List<int> numbers)
+//{
+//    for (int i = 1; i < numbers.Count; i++)
+//    {
+//        if (numbers[i] <= numbers[i - 1])
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+
+
+
+
+
+
+
+
 //14
 //Console.WriteLine("vvedite stroky");
 //string input = Console.ReadLine();
