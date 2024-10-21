@@ -1,3 +1,197 @@
+//13
+
+
+//List<int> array = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
+//Console.WriteLine("old array");
+//PrintArray(array);
+//Swap(array);
+//Console.WriteLine("new array");
+//PrintArray(array);
+
+//static void Swap(List<int> array)
+//{
+//    for (int i = 0; i < array.Count-1; i+=2)
+//    {
+//        int temp = array[i];
+//        array[i] = array[i+1]; 
+//        array[i+1] = temp;
+//    }
+//}
+//static void PrintArray(List<int> array)
+//{
+//    foreach(var item in array)
+//    {
+//        Console.WriteLine(item + " ");
+//    }
+//    Console.WriteLine();
+//}
+
+//15
+
+//List<int> array = new List<int> {};
+//Console.WriteLine("enter ");
+//int.TryParse(Console.ReadLine(), out int n );
+//for(int i = 0; i < n; i++)
+//{
+//    array.Add( int.Parse(Console.ReadLine()));
+//}
+//Console.WriteLine();
+
+//foreach (var item in array)
+//{
+//    if(item == 0)
+//    { 
+//        break; 
+
+//    }
+//    Console.WriteLine(item);
+
+//}
+
+//16
+
+//List<double> argu = new List<double> { };
+//List<double> fun = new List<double> { };
+//Console.WriteLine("Enter subsequence");
+//while (true)
+//{
+//    string input = Console.ReadLine();
+//    if (input.ToLower() == "stop")
+//    {
+//        break;
+//    }
+//    if (double.TryParse(input, out double arg))
+//    {
+
+//    argu.Add(arg);
+//        fun.Add(Functoinal(arg));
+//    }
+//    else
+//    {
+//        Console.WriteLine("incorect");
+//    }
+//}
+//Console.WriteLine("\nARG\tZNACH");
+//Console.WriteLine("----------------------------");
+//for(int i=0; i<argu.Count; i++)
+//{
+//    Console.WriteLine($"{argu[i]}\t{fun[i]}");
+//}
+
+//static double Functoinal(double x)
+//{
+//    return x*x;
+//}
+
+
+//18
+////Console.WriteLine("vvedite kol-vo bankov");
+
+////int n = int.Parse(Console.ReadLine());
+////List<double> buye = new List<double> { };
+
+////for (int i = 0; i < n; i++)
+////{
+////    Console.WriteLine($"vvedite kurs pokupki {i+1}");
+////    double buy = double.Parse(Console.ReadLine());
+////    buye.Add(buy);
+////}
+////Console.WriteLine("vvedite kolvo $");
+////double dollar = double.Parse(Console.ReadLine());
+////double max = buye.Max();
+////int maxIndex = buye.IndexOf(max);
+////Console.WriteLine($"best kurs{buye[maxIndex]} продажа принесет {max*dollar} рублей v banke {maxIndex + 1}");
+/*
+double max = 0;
+int best = -1;
+for(int i = 0;i < n;i++)
+{
+    double rub = dollar * buye[i];
+    if (rub > max)
+    {
+
+    max = rub; best = i; 
+    }
+}
+Console.WriteLine($"best kurs{buye[best]} v banke {best + 1}");
+Console.WriteLine($"v poluch {max} rub");
+*/
+
+
+//19
+//List<int> array = new List<int> {};
+//Console.WriteLine("enter ");
+//int.TryParse(Console.ReadLine(), out int n);
+//array.IndexOf(n);
+//for (int i = 0; i < array.Count; i *= 2)
+//{
+//    using System.Globalization;
+
+//    if (i < array.Count)
+//    {
+//        Console.WriteLine($"index {i}, element: {array[i]}");
+//    }
+//}
+
+//}
+////foreach (int i in array)
+////{
+//if (array.Count == 0)
+//{
+//    //int t = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine(Math.Pow(n, 2));
+//}
+
+//}
+
+
+//20
+
+Console.WriteLine("enter subsequence");
+int n = int.Parse(Console.ReadLine());
+
+
+//Console.WriteLine("enter r");
+//int r = int.Parse(Console.ReadLine());
+
+Console.WriteLine("enter subsequence");
+List<double> nums = new List<double> { };
+for( int i = 0; i < n; i++ )
+{
+    double num = double.Parse(Console.ReadLine());
+    nums.Add(num);
+}
+Console.WriteLine("enter k");
+int k = int.Parse(Console.ReadLine());
+int max = 0;
+int min = 0;
+int equal = 0;
+foreach (var num in nums)
+{
+    if (k == num)
+    {
+        Console.WriteLine("equal k");
+        equal++;
+    }
+    else if (k > num)
+    {
+        Console.WriteLine("smaller then k");
+        min++;
+    }
+    else 
+    {
+        Console.WriteLine("biger then k");
+        max++;
+    }
+
+}
+
+Console.WriteLine(
+Console.WriteLine(
+Console.WriteLine(n);
+
+
+
 //int a = 0;
 //List<int> aaa = new List<int>();
 //Console.WriteLine("vvedite k");
