@@ -1,4 +1,111 @@
-//13
+//1
+//usind System.IO
+
+//Random rnd = new Random();
+//Console.WriteLine("Сколько чисел создавать?");
+//int.TryParse(Console.ReadLine(), out int number);
+
+//using (var fs = File.Create("f"))
+//using (var bw = File.Create("fs"))
+//{
+//    for (int i = 0; i < number; i++)
+//        bw.Write(rnd.Next(0, 100));
+//}
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var br = new BinaryReader("fs"))
+//using (var bw = new BinaryWriter("gs"))
+//{
+//    for (int i = 0; i < number; i++)
+//    {
+//        int n = br.ReadInt32();
+//        if (n % 2 == 0)
+//        {
+//            bw.Write(n);
+//            Console.WriteLine($" число {n} записано в g");
+//    }   }
+//}
+
+//2
+
+
+//Random rnd = new Random();
+//Console.WriteLine("deistviteln chisla");
+//int.TryParse(Console.ReadLine(), out int number);
+//using (var fs = File.Create("f"))
+//using (var bw = new BinaryWriter(fs))
+//using (var br = new BinaryReader(fs))
+//    //double prod = 1;
+//{
+//    for (int i = 0; i < number; i++)
+//        bw.Write(rnd.Next(0, 100));
+//    int n = br.ReadInt32();
+//    int s = br.ReadInt32();
+//    if (double.TryParse(Console.ReadLine(), out double num))
+//    {
+//        num*= s;
+//        bw.Write(num);
+//        Console.WriteLine($" число {n} ");
+//    }
+//}
+
+//3
+//Random rnd = new Random();
+//Console.WriteLine("Сколько чисел создавать?");
+//int.TryParse(Console.ReadLine(), out int number);
+//Console.WriteLine("vvedite n");
+//int.TryParse(Console.ReadLine(), out int n);
+//Console.WriteLine("vvedite m");
+//int.TryParse(Console.ReadLine(), out int m);
+
+
+
+
+
+//using (var fs = File.Create("f"))
+//using (var bw = new BinaryWriter(fs))
+//{
+//    for (int i = 0; i < number; i++)
+//        bw.Write(rnd.Next(0, 100));
+//}
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var br = new BinaryReader(fs))
+//using (var bw = new BinaryWriter(gs))
+//{
+//    for (int i = 0; i < number; i++)
+//    {
+//        int test = br.ReadInt32();
+//        if (((test%m)==0) && (( test% n) !=0))
+//        {
+//            bw.Write(test);
+          
+
+//            Console.WriteLine($" chislo {number} ne delits {n}  delits  {m}");
+//        }
+
+        
+  
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //13
 
 
 //List<int> array = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
