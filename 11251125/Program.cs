@@ -1,3 +1,207 @@
+
+//5
+//Random rnd = new Random();
+//Console.WriteLine("num");
+//int.TryParse(Console.ReadLine(), out int number);
+//Console.WriteLine("unum");
+//int.TryParse(Console.ReadLine(), out int unum);
+//using (var fs = File.Create("f"))
+//using (var bw = new BinaryWriter(fs))
+//{
+//    for (int i = 0; i < number; i++)
+//        bw.Write(rnd.Next(0, 100));
+
+//}
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var br = new BinaryReader(fs))
+//using (var brGs = new BinaryReader(gs))
+//using (var bw = new BinaryWriter(gs))
+//{
+//    int n = br.ReadInt32();
+//    gs.Position = 0;
+//    bool exist = false;
+//    while (gs.Position < gs.Length)
+//    {
+//        if (n == brGs.ReadInt32())
+//        {
+//            exist = true;
+//            break;
+//        }
+//    }
+//    if (!exist)
+//    {
+//        bw.Write(n);
+//        Console.WriteLine(n);
+//    }
+
+//}
+
+//6
+//Random rnd = new Random();
+//Console.WriteLine("enter number");
+//int.TryParse(Console.ReadLine(), out int n);
+//Console.WriteLine("enter K");
+//int.TryParse(Console.ReadLine(), out int k);
+//using (var fs = File.Create("f"))
+//using (var bw = new BinaryWriter(fs))
+//{
+//    for (int i = 0; i < n; i++)
+//    {
+//        bw.Write(rnd.Next(0, 100));
+//    }
+
+
+//}
+//int count = 0;
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var br = new BinaryReader(fs))
+//using (var brGs = new BinaryReader(gs))
+//using (var bw = new BinaryWriter(gs))
+//{
+
+
+//    gs.Position = 0;
+
+//    while (fs.Position < fs.Length)
+//    {
+//        int num = br.ReadInt32();
+//        if (num % k == 0)
+//        {
+//            bw.Write(num);
+//            count++;
+
+//        }
+//    }
+//    Console.WriteLine("chisla kratny" + count);
+//    gs.Position = 0;
+//    while (gs.Position < gs.Length)
+//    {
+//        int num = brGs.ReadInt32();
+//        Console.WriteLine(num);
+//    }
+
+//}
+
+//7
+//Console.WriteLine("enter number");
+//int.TryParse(Console.ReadLine(), out int n);
+//Console.WriteLine("enter K");
+//int.TryParse(Console.ReadLine(), out int k);
+
+
+//n = int.Parse(Console.ReadLine());
+//Random rnd = new Random();
+//using (var fs = File.Create("f"))
+//using (var sw = new StreamWriter(fs))
+//{
+//    for (int i = 0; i < n; i++)
+//    {
+//        double num = rnd.NextDouble();
+//        sw.Write(rnd.Next(0, 100));
+//        sw .Write(num);
+//    }
+
+
+//}
+//int count = 0;
+//double min = double.MaxValue;
+//double max = double.MinValue;
+
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var sr = new StreamReader(fs))
+//using (var brGs = new BinaryReader(gs))
+//using (var bw = new BinaryWriter(gs))
+//{
+//    string line;
+//while ((line = sr.ReadLine()) != null)
+//    {
+//        if (double.TryParse(line, out double num))
+//        {
+//            if (num < min) min = num;
+//            if (num > max) max = num;
+//            count++;
+//        }
+//        else
+//        {
+//            Console.WriteLine($"icorect{line}");
+//        }
+//            //if (num < min)
+//            //{
+//            //   min = num;
+//            //}
+//            //if else(num > max)
+//            //{ 
+//            //    max = num; 
+//            //}   
+
+
+
+//            //else
+//            //{
+//            //   max = num;
+//            //}
+//        }
+
+//    }
+
+//if (min == double.MaxValue || max == double.MinValue)
+//{
+//    Console.WriteLine($"ne udalos foubd  min and max{count}");
+//}
+//else
+//{
+//Console.WriteLine(min);
+//Console.WriteLine(max);
+//Console.WriteLine(min+max);
+//}
+
+//9
+//Random rnd = new Random();
+//Console.WriteLine("enter number");
+//int.TryParse(Console.ReadLine(), out int n);
+//Console.WriteLine("enter K");
+//int.TryParse(Console.ReadLine(), out int k);
+//using (var fs = File.Create("f"))
+//using (var bw = new BinaryWriter(fs))
+//{
+//    for (int i = 0; i < n; i++)
+//    {
+//        bw.Write(rnd.Next(0, 100));
+//    }
+//}
+//int count = 0;
+//using (var fs = File.OpenRead("f"))
+//using (var gs = File.Create("g"))
+//using (var br = new BinaryReader(fs))
+//using (var brGs = new BinaryReader(gs))
+//using (var bw = new BinaryWriter(gs))
+//{
+//    gs.Position = 0;
+
+//    while (fs.Position < fs.Length)
+//    {
+//        int num = br.ReadInt32();
+//        if (num !% k == 0)
+//        {
+//            bw.Write(num);
+//            count++;
+//        }
+//    }
+//    Console.WriteLine("chisla kratny" + count);
+//    gs.Position = 0;
+//    while (gs.Position < gs.Length)
+//    {
+//        int num = brGs.ReadInt32();
+//        Console.WriteLine(num);
+//    }
+//}
+
+
+
+
 //1
 //usind System.IO
 
