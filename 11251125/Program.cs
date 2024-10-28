@@ -1,3 +1,78 @@
+//a
+//double.TryParse(Console.ReadLine(), out double m);
+//int totalNumber = 0;
+//double totalWeigth = 0;
+//double srednee = 0;
+//int pascount = 0;
+//int more = 0;
+//bool has = false;
+//using (var fs = File.OpenRead("bagazh"))
+//using (var sr = new BinaryReader(fs))
+//{
+//    while (fs.Position < fs.Length)
+//    {
+//        int num = sr.ReadInt32();
+//        double weigth = sr.ReadDouble();
+//        totalWeigth += weigth;
+//        totalNumber += num;
+//        pascount++;
+//        if(num > 2)
+//        {
+//            more++;
+//        }
+//        if ( num == 1 && weigth < m)
+//        {
+//            has = true;
+//        }
+//    }
+
+//    srednee = totalWeigth / totalNumber;
+//    fs.Position = 0;
+//    while (fs.Position < fs.Length)
+//    {
+//        int num = sr.ReadInt32();
+//        double weigth = sr.ReadDouble();
+//        if (Math.Abs(weigth / num - srednee) <= m)
+//        {
+//          Console.WriteLine($"{num} {weigth}");
+//        }
+//        if ( num > srednee)
+//        {
+//            more ++;
+//        }
+
+//        Console.WriteLine($" pas bolee 2 {more}");
+//        Console.WriteLine($" pas boleee sred {more}");
+//        Console.WriteLine($"have pas menee{m} kg {has} ");
+
+//    }
+//}
+
+string search = Console.ReadLine();
+
+
+using (var fs = File.OpenRead("Bibl"))
+using (var sr = new BinaryReader(fs))
+    while (fs.Position < fs.Length)
+    {
+        var author = sr.ReadString();
+        var book = sr.ReadString();
+        int num = sr.ReadInt32();
+        //books.Add(new Book(author,book,num)); 
+        
+        if (author.Contains(search) && num >= 1960)
+            Console.WriteLine($"{author} {book} {num}");
+      
+    }
+
+string sinfo = Console.WriteLine("nКниги с названием "Информатика""); 
+bool found = false;
+for (int i = 0; i < book.Lenght; i++)
+{
+    if()
+}
+
+
 
 //5
 //Random rnd = new Random();
